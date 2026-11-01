@@ -14,6 +14,21 @@
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#f5f0e6">
   <title>Vidhu Shekhar Mishra | Performance Marketing & Paid Ads</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S41CLK2XCP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S41CLK2XCP');
+    document.addEventListener('click', function (event) {
+      const link = event.target.closest('a[href^="https://wa.me/"], a[href^="mailto:"]');
+      if (!link) return;
+      gtag('event', 'contact_click', {
+        method: link.href.startsWith('mailto:') ? 'email' : 'whatsapp',
+        transport_type: 'beacon'
+      });
+    });
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
